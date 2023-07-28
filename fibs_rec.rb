@@ -19,10 +19,11 @@ end
 # p fibs(8)
 
 def fibs_rec(n)
+
   return [0, 1] if n <= 2
-  arry = fibs_rec(n -1)
+
+  arry = fibs_rec(n - 1)
   arry << arry[-2] + arry[-1]
-  # return arry
 end
 
 p fibs_rec(8)
